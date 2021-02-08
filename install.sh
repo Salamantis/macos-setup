@@ -47,8 +47,7 @@ Welcome, please select an installation option:
 0. Only configs (no packages)
 1. Safe install (no sectools)
 2. Safe install with GUI apps
-3. Full install (everything!)
-"
+3. Full install (everything!)"
 read OPTION
 re='^[0-3]+$'
 if ! [[ $OPTION =~ $re ]] ; then
@@ -79,6 +78,17 @@ fi
 if [[ $OPTION = 3 ]] ; then
 	brew install ${UNSAFE_PACKAGES[@]}
 fi
-####VIM
+####VIM####
+#download plugin manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#copy my vimrc file
+cp vimrc ~/.vimrc
+#install plugins so they are ready to go 
+vim -c 'PlugInstall | qa'
+######get ohmyzsh
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+chmod 700 install.sh
+./install.sh
+#install powerline
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
