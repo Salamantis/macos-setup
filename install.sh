@@ -79,3 +79,6 @@ fi
 if [[ $OPTION = 3 ]] ; then
 	brew install ${UNSAFE_PACKAGES[@]}
 fi
+####VIM
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
