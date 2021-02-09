@@ -1,2 +1,5 @@
 # macos-setup
-my scripts for setting up macOS installations 
+my files for setting up macOS installations
+
+ 
+
