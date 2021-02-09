@@ -26,6 +26,7 @@ Plug 'itchyny/landscape.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-eunuch'
 Plug 'sainnhe/sonokai'
+Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 " Initialize plugin system
 call plug#end()
