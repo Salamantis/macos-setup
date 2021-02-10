@@ -115,6 +115,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cat='bat'
+alias ipw='ifconfig en0 | grep "inet " | awk "{print $2}"'
+
+alias -s md=typora
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 

@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
+#Cli apps
 brew "blueutil"
 brew "cask"
 brew "htop"
@@ -14,6 +15,9 @@ brew "wget"
 brew "git"
 brew "speedtest-cli"
 brew "links"
+brew "tldr"
+brew "colordiff"
+brew "bat"
 #Mac App Store
 mas "Adblock Plus", id: 1432731683
 mas "Bear", id: 1091189122
@@ -26,11 +30,14 @@ mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Tot", id: 1491071483
 #GUI apps 
-cask  "google-chrome"
-cask "firefox"
-cask "virtualbox"
+cask "brave-browser"
+cask "google-chrome"
 cask "wireshark"
 cask "spotify"
 cask "lastpass"
 cask "gimp"
 cask "typora"
+cask "vlc"
+cask "docker"
+# meeter
+#spotmenu
